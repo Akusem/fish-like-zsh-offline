@@ -17,3 +17,13 @@ mv "$PWD"/deps/headline/headline.zsh-theme ~/.oh-my-zsh/custom/themes/headline.z
 sed -i -e 's/plugins=(git)/plugins=(git zsh-autosuggestions history-substring-search zsh-syntax-highlighting)/' ~/.zshrc
 sed -i -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="headline"/' ~/.zshrc
 
+# Add the zsh aliases
+mv "$PWD"/deps/zsh_aliases /etc/zsh/
+# Modify global zshrc to load aliases
+lines="
+# Source the zsh_aliases file if it exists
+if [ -f /etc/zsh/zsh_aliases ]; then
+    source /etc/zsh/zsh_aliases
+fi
+"
+echo "$lines" >> /etc/zsh/zshrc

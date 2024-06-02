@@ -6,7 +6,7 @@ This repository provides a comprehensive setup for installing Zsh, Oh My Zsh, an
 
 - [Dependencies](#dependencies)
 - [Installation](#installation)
-- [Docker Setup](#docker-setup)
+- [In Docker installation](#Installation-in-a-Docker-container)
 - [Contributing](#contributing)
 
 ## Dependencies
@@ -35,8 +35,7 @@ To install Zsh, Oh My Zsh, and the extensions listed in this repository, follow 
 ## Installation in a Docker container
 
 You may want to have a zsh terminal in a Docker container
-you regurlaly use, in this case you can add 2 lines in the
-`Dockerfile` of your container:
+you regurlaly use, in this case you can add the following lines in the `Dockerfile` of your container:
 
 ```Dockerfile
 # Use an image based on ubuntu 22.04 if you want to install zsh from the repo dependencies

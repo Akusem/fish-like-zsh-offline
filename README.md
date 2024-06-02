@@ -7,6 +7,7 @@ This repository provides a comprehensive setup for installing Zsh, Oh My Zsh, an
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [In Docker installation](#Installation-in-a-Docker-container)
+- [Zsh Aliases](#zsh-aliases)
 - [Contributing](#contributing)
 
 ## Dependencies
@@ -51,6 +52,12 @@ WORKDIR /app
 
 # The rest of the setup
 ```
+
+## Zsh Aliases
+
+This repository also includes a set of predefined Zsh aliases to enhance your command-line experience. These aliases are automatically installed and sourced from the `deps/zsh_aliases` file.
+
+Modify this file if you want to add aliases.
 
 ## Contributing
 
